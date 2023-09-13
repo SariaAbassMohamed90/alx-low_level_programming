@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-    jack_bawer();
+    jack_bauer();
     return (0);
 }
