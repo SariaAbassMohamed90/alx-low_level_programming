@@ -3,27 +3,21 @@
  * puts - Function should print only one character out of two
  * starting with the first one
  * @str: Input
- * Retrun: print
+ * Retrun: void
  */
 void puts2(char *str)
 {
-	int longi = 0;
-	int t = 0;
-	char *y = str;
-	int o;
+	int i;
+	int j = 0;
 
-	while (*y != '\0')
+	while (str[j] != '\0')
 	{
-		y++;
-		longi++;
+		j++;
 	}
-	t = longi - 1;
-	for (o = 0; o <= t; o++)
+
+	for (i = 0; i < j; i += 2)
 	{
-		if (0 % 2 == 0)
-		{
-			_putchar(str[o]);
-		}
+		_putchar(str[i]);
 	}
 	_putchar('\n');
 }
