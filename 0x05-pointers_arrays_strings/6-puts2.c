@@ -6,7 +6,7 @@
  * Retrun: void
  */
 
-void puts2(char *str);
+void puts2(char *str)
 
 {
 
