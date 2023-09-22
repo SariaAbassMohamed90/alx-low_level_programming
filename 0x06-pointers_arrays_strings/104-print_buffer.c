@@ -29,8 +29,6 @@ void print_buffer(char *b, int size)
 			if (j % 2 != 0)
 				printf(" ");
 		}
-		
-		printf(" ");
 
 		for (j = i; j < i + 10 && j < size; j++)
 		{
