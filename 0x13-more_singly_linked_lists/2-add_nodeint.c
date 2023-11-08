@@ -1,5 +1,5 @@
 #include "lists.h"
-
+#include <stdlib.h>
 /**
  * add_nodeint - adds a node to the beginning of a linked list
  * @head: pointer to the head of the list
