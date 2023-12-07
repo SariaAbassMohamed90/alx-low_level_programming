@@ -5,7 +5,7 @@
  * @head: address of pointer to current head node
  * @n: int field of new node
  *
- * Return: address of new node pr NULL
+ * Return: address of new node or NULL
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
@@ -14,7 +14,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 		return (new ? free(new), NULL : NULL);
 
 	new-> = n;
-	new->prev = NILL;
+	new->prev = NULL;
 	if (!*head)
 	{
 		*head = new;

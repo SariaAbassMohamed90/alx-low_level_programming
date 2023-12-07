@@ -7,18 +7,18 @@
  *
  * Return: address of new node or NULL
  */
-dlistint_t *add_dnodeint(dlistint_t **head, const int n)
+dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 	dlistint_t *new = malloc(sizeof(dlistint_t));
 	if (!head || !new)
 		return (new ? free(new), NULL : NULL);
 	
 	new-> = n;
-	new->prev = NILL;
+	new->prev = NULL;
 	if (!*head)
 	{
+		new->prev = NULL;
 		*head = new;
-		new->next = NULL;
 	}
 	else
 	{
